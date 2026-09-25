@@ -2,9 +2,9 @@ System Design & Multi-GPU StrategyThis design implements a competitive 2-GPU Con
       
       [ Host Arbiter / Game Loop ]
          /                    \
-  (Device 0)                (Device 1)
-[GPU 1: Parallel Minimax]  [GPU 2: Monte Carlo Rollout]
-  Evaluate 7 branches        Simulate N random games
+      (Device 0)                (Device 1)
+    [GPU 1: Parallel Minimax]  [GPU 2: Monte Carlo Rollout]
+    Evaluate 7 branches        Simulate N random games
         \                      /
          [ Output Move Selection ]
 
